@@ -12,5 +12,14 @@ export default props =>
             <Link to="/pacientes">
                 <i className="fa fa-users"></i> Pacientes
             </Link>
+            <Link to="/agenda">
+                <i className="fa fa-calendar"></i> Agenda
+            </Link>
+            <Link to="/consulta">
+                <i className="fa fa-address-book"></i> Consulta
+            </Link>
+            <Link to="/dieta">
+                <i className="fa fa-leaf"></i> Dieta
+            </Link>
         </nav>
     </aside>
