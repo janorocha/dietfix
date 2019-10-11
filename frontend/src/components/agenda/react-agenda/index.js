@@ -4,4 +4,4 @@ import Modal from './Modal.js';
 import { guid , getUnique , getLast , getFirst } from './helpers.js';
 import './style.css';
 
-module.exports = { ReactAgenda , ReactAgendaCtrl , guid , getUnique , getLast , getFirst , Modal } ;
+export { ReactAgenda , ReactAgendaCtrl , guid , getUnique , getLast , getFirst , Modal } ;

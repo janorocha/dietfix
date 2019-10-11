@@ -202,9 +202,9 @@ this.setState({numberOfDays:days})
       <div className="content-expanded ">
 
         <div className="control-buttons">
-          <button  className="button-control" onClick={this.zoomIn}> <i className="zoom-plus-icon"></i> </button>
+          {/* <button  className="button-control" onClick={this.zoomIn}> <i className="zoom-plus-icon"></i> </button>
           <button  className="button-control" onClick={this.zoomOut}> <i className="zoom-minus-icon"></i> </button>
-          <button  className="button-control" onClick={this._openModal}> <i className="schedule-icon"></i> </button>
+          <button  className="button-control" onClick={this._openModal}> <i className="schedule-icon"></i> </button> */}
           <button  className="button-control" onClick={this.changeView.bind(null , 7)}> {moment.duration(7, "days").humanize()}  </button>
           <button  className="button-control" onClick={this.changeView.bind(null , 4)}> {moment.duration(4, "days").humanize()}  </button>
           <button  className="button-control" onClick={this.changeView.bind(null , 3)}> {moment.duration(3, "days").humanize()}  </button>
