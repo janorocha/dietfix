@@ -85,7 +85,7 @@ export default class ReactAgendaCtrl extends Component {
   }
 
   handleDateChange(ev, date) {
-    var endD = moment(this.state.endDateTime)
+  var endD = moment(this.state.endDateTime)
   var data = this.state;
   data[ev] = date;
 
@@ -269,7 +269,7 @@ render() {
           </div>
         </div>
 
-        <input type="submit" value="Salvar"/>
+        <input type="submit" value="Salvar" className="agendCtrl-save-button"/>
       </form>
     </div>
   );
