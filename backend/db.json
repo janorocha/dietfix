@@ -1,14 +1,29 @@
 {
   "users": [
     {
-      "name": "jano",
+      "name": "jano rocha",
       "email": "rocha.jano@gmail.com",
-      "id": 1
+      "id": 1,
+      "dataNascimento": "1986-10-14",
+      "dataDeNascimento": "1986-10-14",
+      "sexo": "masculino",
+      "telefone": "61992725334",
+      "tiposanguineo": "A Pos",
+      "endereco": "207",
+      "cidade": "Val",
+      "tipoSanguineo": "A Pos"
     },
     {
       "name": "Natalia",
       "email": "natalia@email.com",
-      "id": 2
+      "id": 2,
+      "dataNascimento": "2019-11-06",
+      "dataDeNascimento": "1989-11-22",
+      "sexo": "feminino",
+      "telefone": "61991056772",
+      "tipoSanguineo": "A Pos",
+      "endereco": "207",
+      "cidade": "Valparaiso"
     }
   ]
 }

@@ -10,7 +10,15 @@ const headerProps = {
 
 const baseUrl = 'http://localhost:3001/users'
 const initialState = {
-    user: { name: '', email: '' },
+    user: { name: '', 
+            email: '',
+            dataDeNascimento: '', 
+            sexo: '',
+            telefone: '',
+            endereco: '',
+            cidade: '',
+            tipoSanguineo: ''
+        },
     list: []
 }
 
@@ -49,6 +57,7 @@ export default class UserCrud extends Component {
         user[event.target.name] = event.target.value
         this.setState({ user })
     }
+    
 
     rederForm() {
         return (
@@ -72,6 +81,67 @@ export default class UserCrud extends Component {
                                 value={this.state.user.email}
                                 onChange={e => this.updateFild(e)}
                                 placeholder="Digite o e-mail..." />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="form-group">
+                            <label>Data Nasc.</label>
+                            <input type="date" className="form-control"
+                                name="dataDeNascimento"
+                                value={this.state.user.dataDeNascimento}
+                                onChange={e => this.updateFild(e)} />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="form-group">
+                            <label>Sexo</label>
+                            <div>
+                            <input type="radio"
+                                name="sexo"
+                                value="masculino"
+                                onChange={e => this.updateFild(e)} /> Masculino <br></br>
+                            <input type="radio"
+                                name="sexo"
+                                value="feminino"
+                                onChange={e => this.updateFild(e)} /> Feminino
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="form-group">
+                            <label>Telefone</label>
+                            <input type="text" className="form-control"
+                                data-mask="(00) 00000-0000"
+                                name="telefone"
+                                value={this.state.user.telefone}
+                                onChange={e => this.updateFild(e)} />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="form-group">
+                            <label>Tipo Sanguineo</label>
+                            <input type="text" className="form-control"
+                                name="tipoSanguineo"
+                                value={this.state.user.tipoSanguineo}
+                                onChange={e => this.updateFild(e)} />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-12">
+                        <div className="form-group">
+                            <label>Endereço</label>
+                            <input type="text" className="form-control"
+                                name="endereco"
+                                value={this.state.user.endereco}
+                                onChange={e => this.updateFild(e)} />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-6">
+                        <div className="form-group">
+                            <label>Cidade</label>
+                            <input type="text" className="form-control"
+                                name="cidade"
+                                value={this.state.user.cidade}
+                                onChange={e => this.updateFild(e)} />
                         </div>
                     </div>
                 </div>
